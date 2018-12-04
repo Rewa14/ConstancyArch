@@ -140,14 +140,19 @@ function choiceAlt() {
 
 function altExecute(){
     if(localStorage.getItem("altO") == 1) {
+        var kW = 'Wes';
+        document.getElementById("kaiWes").innerHTML = kW;
         var kai = document.getElementsByClassName("kaiS");
         for(var i = 0; i < kai.length; i++) {
-            kai[i].style.color = "brown";
+            kai[i].style.color = "#8D38C9";
         }
         var wes = document.getElementsByClassName("wesS");
         for(var i = 0; i < wes.length; i++) {
-            wes[i].style.color = "gray";
+            wes[i].style.color = "#00FFFF";
         }
+    } else{
+        var kW = 'Kai';
+        document.getElementById("kaiWes").innerHTML = kW;
     }
 }
 
@@ -181,57 +186,54 @@ function aspectCopy() {
     window.location.href = 'aspectCopy.html';
 }
 
-function learned() {
-    if(localStorage.getItem("adVal") == 1) {
-        document.getElementById("ad").style.visibility = 'visible';
-    } else {
-        document.getElementById("ad").style.visibility = 'hidden';
-    }
+function learned2() {
+    var tx1 = 'That game companies like Sierra online stopped making games because of the popularity of shooter games.';
+    document.getElementById("tx1").innerHTML = tx1;
+    var tx2;
     if(localStorage.getItem("moVal") == 1) {
-        document.getElementById("mo").style.visibility = 'visible';
-    } else {
-        document.getElementById("mo").style.visibility = 'hidden';
+        tx2 = 'Adventure games are a valuable form of media, providing worlds to map out and thought-provoking puzzles to solve.';
+    } else if(localStorage.getItem("swVal") == 1){
+        tx2 = 'Nostalgia needs to kept in check as it can cloud how games are remembered, sometimes exaggerating the praise it deserves.';
+    } else{
+        tx2 = '';
     }
-    if(localStorage.getItem("swVal") == 1) {
-        document.getElementById("sw").style.visibility = 'visible';
-    } else {
-        document.getElementById("sw").style.visibility = 'hidden';
-    }
+    document.getElementById("tx2").innerHTML = tx2;
+    var tx3;
     if(localStorage.getItem("koVal") == 1) {
-        document.getElementById("ko").style.visibility = 'visible';
-    } else {
-        document.getElementById("ko").style.visibility = 'hidden';
+        tx3 = 'There are game companies will cater to boys to sell their games even if it objectifies women.';
+    } else if(localStorage.getItem("maVal") == 1){
+        tx3 = 'Role-playing was seen as a girlish, childish activity, an idea that was popularized by Roger Caillois.';
+    } else{
+        tx3 = '';
     }
-    if(localStorage.getItem("maVal") == 1) {
-        document.getElementById("ma").style.visibility = 'visible';
-    } else {
-        document.getElementById("ma").style.visibility = 'hidden';
-    }
+    document.getElementById("tx3").innerHTML = tx3;
+    var tx4;
     if(localStorage.getItem("anVal") == 1) {
-        document.getElementById("an").style.visibility = 'visible';
-    } else {
-        document.getElementById("an").style.visibility = 'hidden';
+        tx4 = 'Games have been dominated by a single privileged perspective, which is terrifying because an art form should be open to everyone.';
+    } else if(localStorage.getItem("flVal") == 1){
+        tx4 = 'Including details in games is so important to include as with just a few pieces of information players are able to create a larger story for their actions.';
+    } else if(localStorage.getItem("daVal") == 1){
+        tx4 = 'Game companies need to foster better equality practices, as women are not seen as the valuable assets that they are in game creation.';
+    } else{
+        tx4 = '';
     }
+    document.getElementById("tx4").innerHTML = tx4;
+    var tx5;
     if(localStorage.getItem("arVal") == 1) {
-        document.getElementById("ar").style.visibility = 'visible';
-    } else {
-        document.getElementById("ar").style.visibility = 'hidden';
+        tx5 = 'Games are a form of art as they hold ideas about society and at the same time, they supersede art mediums as games can be created with other art forms.';
+    } else if(localStorage.getItem("ihVal") == 1){
+        tx5 = 'Games can provide valuable skills such as better hand-eye coordination which can translate into other fields with examples of players becoming better surgeons.';
+    } else{
+        tx5 = '';
     }
-    if(localStorage.getItem("flVal") == 1) {
-        document.getElementById("fl").style.visibility = 'visible';
-    } else {
-        document.getElementById("fl").style.visibility = 'hidden';
-    }
-    if(localStorage.getItem("ihVal") == 1) {
-        document.getElementById("ih").style.visibility = 'visible';
-    } else {
-        document.getElementById("ih").style.visibility = 'hidden';
-    }
-    if(localStorage.getItem("daVal") == 1) {
-        document.getElementById("da").style.visibility = 'visible';
-    } else {
-        document.getElementById("da").style.visibility = 'hidden';
-    }
+    document.getElementById("tx5").innerHTML = tx5;
+}
+
+n =  new Date();
+document.getElementById("date").innerHTML = n.getFullYear();
+
+function reflect() {
+    window.open('https://docs.google.com/document/d/1MGOph50w1KFN5NEu96CAxFAv9EAxMMnPFaPv-y960Lw/edit?usp=sharing', '_blank');
 }
 
 function reload() {
@@ -240,3 +242,4 @@ function reload() {
         home();
     }
 }
+
