@@ -1,0 +1,184 @@
+@font-face {
+    font-family: stark;
+    src: url(Fonts/Stark.otf);
+}
+
+body {
+    background-color:#72738c;
+    font-family:stark;
+}
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+/*Header*/
+#header {
+    margin-top:-.6em;
+    margin-left:-.55em;
+    height:7.1em;
+    width:100.05%;
+    position:absolute;
+    background-color:#000000;
+    opacity:1;
+    z-index:2;
+}
+#subHeader {
+    width:64em;
+    height:7.1em;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#000000;
+    overflow:hidden;
+    position:relative;
+}
+#headerLeft {
+    float:left;
+    width:20em;
+    height:3em;
+    margin-left:1em;
+    margin-right:auto;
+    position:relative;
+    z-index:1;
+    text-align:center;
+}
+#logo {
+    width:17em;
+    margin-top:.02em;
+    cursor:pointer;
+}
+#headerRight {
+    width:42em;
+    height:3em;
+    float:left;
+    margin-left:0em;
+}
+#characterList {
+    margin-top:.4em;
+    font-size:1em;
+}
+.char {
+    color:white;
+    margin-top:0;
+    margin-bottom:.09em;
+}
+.clicky {
+    text-align:center;
+    margin-top:.4em;
+    font-size:1.4em;
+    background-color:transparent;
+    border:none;
+    color:whitesmoke;
+    font-family:stark;
+    cursor:pointer;
+    margin-left:2em;
+    margin-right:1em;
+}
+.clicky:hover {
+    opacity:.7;
+}
+#bubble {
+    background-color:black;
+    color:white;
+    height:auto;
+    width:62em;
+    position:relative;
+    margin-top:6.85em;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:1em;
+    border-radius:.3em;
+}
+#string {
+    margin-left:.7em;
+    margin-right:.7em;
+    border:transparent solid;
+}
+
+/*Text*/
+.dsc {
+    text-align:center;
+}
+.sty {
+    margin-bottom:-.5em;
+}
+.spk {
+    text-align:right;
+    margin-left:10em;
+}
+.opt {
+    text-align:center;
+    text-decoration: underline overline;
+}
+nxt:hover {
+    cursor:pointer;
+    color:#65a641;    
+}
+sc {
+    color:white;
+}
+.you {
+    margin-right:10em;
+    color:#65a641;
+}
+.sullivan {
+    color:red;
+}
+.finley {
+    color:orange;
+}
+.employee {
+    color:forestgreen;
+}
+.audience {
+    color:magenta;
+}
+.jordan {
+    color:blue;
+}
+.kai {
+    color:cyan;
+}
+.wes {
+    color:purple;
+}
+.kaiS {
+    color:cyan;
+}
+.wesS {
+    color:purple;
+}
+.woman {
+    color:yellow;
+}
+.officer {
+    color:#72738c;
+}
+
+/*Begining*/
+.welcome {
+    width:60%;
+    display:block;
+    margin:auto;
+}
+#start:hover #startReveal {
+    opacity:1;
+    cursor:pointer;
+}
+#startReveal {
+    margin-top:-16.48em;
+    opacity:0;
+    transition:.8s ease;
+}
+
+/*End*/
+.nTx {
+    margin-bottom: -.5em;
+}
+.sTx {
+    margin-bottom: -2.25em;
+}
+.lTx{
+    margin-bottom: -3.5em;
+}
+

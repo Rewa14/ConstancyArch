@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Meeting Room</title>
+    <link type="text/css" rel='stylesheet' href='index.css' />
+    <link rel="shortcut icon" href="Images/ConstancyArchIconAlt.png">
+</head>
+
+<body>
+    <div id="header">
+        <div id="subHeader">
+            <div id="headerLeft">
+                <img id="logo" src="Images/ConstancyArch.png" alt="Constancy Arch" title="Restart" onclick="reload()" />
+            </div>
+            <div id="headerRight">
+                <div id="characterList">
+                    <p class="char">Characters:</p>
+                    <p class="char you">You</p>
+                    <p class="char kai">Kai</p>
+                    <p class="char wes">Wes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="bubble">
+        <div id="string">
+            <p class="sty dsc">Before you can turn the knob of the door you hear two men arguing on the other side. As you listen to their argument you hear someone running behind you. Afraid that it may be someone from Constancy Arch you quickly open the white door in the middle of their argument.</p>
+            <p class="sty spk kai">Wes, I don't care what you say, games are an art medium.</p>
+            <p class="sty spk wes">Look I understand where you are coming from Kai, but they're bigger than that! They're. . . oh, hello there.</p>
+            <p class="sty you">Uh, hi, sorry I don't mean to intrude, I was just looking for the bathroom.</p>
+            <p class="sty spk kai">Hold up there, maybe you can help us. We're having this argument about whether games are an art medium or not.</p>
+            <p class="sty you">Oh uh sure, yeah, what're your arguments?</p>
+            <p class="sty spk wes">Well, I think that games supersede an art form because games themselves can be created through basically any art medium <sc>(Flanagan)</sc>.</p>
+            <p class="sty spk kai">See I think that when we talk about an art medium we are not just talking about the physical material but also about how mediums carry ideas about social customs, aesthetics, societal debates, etcetera <sc>(Flanagan)</sc>.</p>
+            <p class="sty spk wes">So what do you think?</p>
+            <p class="sty opt"><nxt onclick="choice()">Side with Wes</nxt></p>
+            <p class="sty opt"><nxt onclick="choiceAlt()">Side with Kai</nxt></p>
+            <p class="sty opt"><nxt onclick="choice()">Say you're unsure</nxt></p>
+            <p class="sty opt"><nxt onclick="hallway()">Just turn around and go back through the door and find a bathroom</nxt></p>
+            <br>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>

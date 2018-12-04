@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Constancy Arch</title>
+    <link type="text/css" rel='stylesheet' href='index.css' />
+    <link rel="shortcut icon" href="Images/ConstancyArchIconAlt.png">
+</head>
+
+<body>
+    <div id="header">
+        <div id="subHeader">
+            <div id="headerLeft">
+                <img id="logo" src="Images/ConstancyArch.png" alt="Constancy Arch" title="Restart" onclick="reload()" />
+            </div>
+            <div id="headerRight">
+                <div id="characterList">
+                    <p class="char">Characters:</p>
+                    <p class="char you">You</p>
+                    <p class="char finley">Finley</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="bubble">
+        <div id="asdf">
+            <div id="string">
+                <p class="sty dsc">You leave the classroom and take a circular ring device the size of a dinner plate and lift it over your head transporting you back to Constancy Arch Headquarters. You are greeted by Finley, a friend who controls the time machines.</p>
+                <p class="sty spk finley">Back so soon?</p>
+                <p class="sty you">Ha, time travel humor. *You roll your eyes*</p>
+                <p class="sty spk finley">So how was it?</p>
+                <p class="sty you">There was a bit of a complication and I'm going to need you to send me to a couple of more places before I head back here again.</p>
+                <p class="sty spk finley">And why do you need me to do this?</p>
+                <p class="sty opt"><nxt onclick="lieFinley()">Lie to Finley</nxt></p>
+                <p class="sty opt"><nxt onclick="truthFinley()">Tell Finley the Truth</nxt></p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>

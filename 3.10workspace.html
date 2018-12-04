@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Workspace</title>
+    <link type="text/css" rel='stylesheet' href='index.css' />
+    <link rel="shortcut icon" href="Images/ConstancyArchIconAlt.png">
+</head>
+
+<body>
+    <div id="header">
+        <div id="subHeader">
+            <div id="headerLeft">
+                <img id="logo" src="Images/ConstancyArch.png" alt="Constancy Arch" title="Restart" onclick="reload()" />
+            </div>
+            <div id="headerRight">
+                <div id="characterList">
+                    <p class="char">Characters:</p>
+                    <p class="char you">You</p>
+                    <p class="char jordan">Jordan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="bubble">
+        <div id="string">
+        <p class="sty dsc">You walk through the doorway and find a bunch of people at their desks hunched over their computers. You approach the closest person noting the name plaque with the name Jordan you peek over their shoulder.</p>
+            <p class="sty spk jordan">Hello?</p>
+            <p class="sty you">Oh, hi. Sorry to bother you. But may I ask what you're working on?</p>
+            <p class="sty spk jordan">Um, well this is nothing, just some game I'm working on my own time.</p>
+            <p class="sty you">For real? That's awesome, is that what everyone else is working on too?</p>
+            <p class="sty spk jordan">No, this is just what I do when I'm not working on the companies game.</p>
+            <p class="sty you">Oh, so this is a game company, that makes a lot of sense then. Well, what's your game about?</p>
+            <p class="sty spk jordan">Well, it follows the story of me and my life, trying to climb the towers of this building, with each new floor providing a different obstacle that minorities have to face to become successful.</p>
+            <p class="sty you">Interesting, I don't think I've seen a game like that before. Definitely a new perspective.</p>
+            <p class="sty spk jordan">Yeah, it's kind of worrying that the majority of video games come from a single perspective because video games, at least to me, are an art form and a small and privileged perspective should not be dominating an entire art form <sc>(Anthropy)</sc>.</p>
+            <p class="sty you">Oh dang, I've never thought about it like that, but yeah you're totally right! That's super wrong.</p>
+            <p class="sty spk jordan">I'm glad you agree, not everyone here does. Would you want to learn more about it?</p>
+            <p class="sty opt"><nxt onclick="sideRoom()">Go with Jordan</nxt></p>
+            <p class="sty opt"><nxt onclick="hallway()">Say you have to leave and enter the hallway</nxt></p>
+            <br>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
