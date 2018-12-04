@@ -1,4 +1,3 @@
-//All
 var adkins = 0;
 var montfort = 0;
 var swalwell = 0;
