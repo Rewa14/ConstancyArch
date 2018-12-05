@@ -186,20 +186,20 @@ function aspectCopy() {
 }
 
 function learned2() {
-    var tx1 = 'That game companies like Sierra online stopped making games because of the popularity of shooter games.';
+    var tx1 = 'Game companies like Sierra online stopped making games because of the rise of shooter games.';
     document.getElementById("tx1").innerHTML = tx1;
     var tx2;
     if(localStorage.getItem("moVal") == 1) {
         tx2 = 'Adventure games are a valuable form of media, providing worlds to map out and thought-provoking puzzles to solve.';
     } else if(localStorage.getItem("swVal") == 1){
-        tx2 = 'Nostalgia needs to kept in check as it can cloud how games are remembered, sometimes exaggerating the praise it deserves.';
+        tx2 = 'Nostalgia needs to be kept in check as it can cloud how games are remembered, sometimes exaggerating the praise it deserves.';
     } else{
         tx2 = '';
     }
     document.getElementById("tx2").innerHTML = tx2;
     var tx3;
     if(localStorage.getItem("koVal") == 1) {
-        tx3 = 'There are game companies will cater to boys to sell their games even if it objectifies women.';
+        tx3 = 'There are game companies that will cater to boys to sell their games even if it objectifies women.';
     } else if(localStorage.getItem("maVal") == 1){
         tx3 = 'Role-playing was seen as a girlish, childish activity, an idea that was popularized by Roger Caillois.';
     } else{
@@ -210,7 +210,7 @@ function learned2() {
     if(localStorage.getItem("anVal") == 1) {
         tx4 = 'Games have been dominated by a single privileged perspective, which is terrifying because an art form should be open to everyone.';
     } else if(localStorage.getItem("flVal") == 1){
-        tx4 = 'Including details in games is so important to include as with just a few pieces of information players are able to create a larger story for their actions.';
+        tx4 = 'Including details in games is important as with just a few pieces of information players are able to create a larger story for their actions.';
     } else if(localStorage.getItem("daVal") == 1){
         tx4 = 'Game companies need to foster better equality practices, as women are not seen as the valuable assets that they are in game creation.';
     } else{
@@ -219,7 +219,7 @@ function learned2() {
     document.getElementById("tx4").innerHTML = tx4;
     var tx5;
     if(localStorage.getItem("arVal") == 1) {
-        tx5 = 'Games are a form of art as they hold ideas about society and at the same time, they supersede art mediums as games can be created with other art forms.';
+        tx5 = 'Games are a form of art as they hold ideas about society while also superseding art mediums as games themselves can be created by other art forms.';
     } else if(localStorage.getItem("ihVal") == 1){
         tx5 = 'Games can provide valuable skills such as better hand-eye coordination which can translate into other fields with examples of players becoming better surgeons.';
     } else{
